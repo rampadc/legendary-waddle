@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "otp-cli"
+version = "0.1.0"
+description = ""
+authors = ["Cong <rampadc@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.4.0"
+GitPython = "^3.1.24"
+openshift-client = "^1.0.13"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+kubectl-otp = "otp_cli.main:app"
